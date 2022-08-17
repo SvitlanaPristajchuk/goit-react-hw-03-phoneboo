@@ -77,7 +77,7 @@ class Form extends Component {
         <br></br>
         <div>
           <label>
-            <button className={s.button} type="submit" onClick={this.handleAdd}>
+            <button className={s.button} type="submit" >
               add Contact {}
             </button>
           </label>
