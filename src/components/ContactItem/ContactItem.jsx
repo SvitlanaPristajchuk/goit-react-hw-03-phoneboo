@@ -3,10 +3,8 @@ import s from './ContactItem.module.css';
 import PropTypes from 'prop-types';
 
 
-class ContactItem extends Component {
+function ContactItem ({ contact,  deleteContact }) {
 
-    render(){
-        const { contact,  deleteContact } = this.props;
         return (
           <li className={s.item}>
           <span className={s.name}>{contact.name}: </span>
@@ -25,7 +23,7 @@ class ContactItem extends Component {
         );
     };
 
-};
+  
 
 ContactItem.propTypes = {
   contact: PropTypes.object,
