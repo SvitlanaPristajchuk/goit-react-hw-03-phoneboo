@@ -6,6 +6,7 @@ import Header from "./components/Header/Header";
 import ContactList from "./components/ContactList/ContactList";
 import Filter from "./components/Filter/Filter";
 import PropTypes from "prop-types";
+import Slider from "./components/CircularSlider/CircularSlider";
 
 class App extends Component {
   state = {
@@ -84,6 +85,7 @@ componentDidUpdate(prevState){
           contacts={this.filterContacts}
           deleteContact={this.deleteContact}
         />
+        <Slider />
       </>
     );
   }
